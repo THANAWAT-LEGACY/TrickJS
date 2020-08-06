@@ -1,6 +1,8 @@
 // import * as lib from './Function.js';
 // Qoukka เปิดสำหรับการเช็คข้อมูลใน Javascript
 
+
+
 // -- JavaScript Array ที่คุณควรรู้
 
 // คำสั่งต่างๆ
@@ -68,9 +70,104 @@ let findIndexCity = city.findIndex((city) => { // หา index ใน Array
 })
 console.log(findIndexCity);
 
+
+/***  JavaScript Method *** */
+
+const str = "Hello Morioh";
+
+// 1. length() Method
+const l = str.length;
+console.log(l)
+
+// 2. toLocaleLowerCase() Method 
+const toLow = str.toLocaleLowerCase();
+console.log(toLow)
+
+// 3. toLocaleUpperCase() Method
+const toUp = str.toLocaleUpperCase();
+console.log(toUp)
+
+// 4. indexof() Method
+const indexof = str.indexOf("Mor");
+console.log(indexof)
+
+// 5. search() Method
+const search = str.search("oh");
+console.log(search);
+
+// 6. slice() Method
+const slice1 = str.slice(1,4);
+const slice2 = str.slice(5);
+const slice3 = str.slice(2,8);
+
+console.log(slice1);
+console.log(slice2);
+console.log(slice3);
+
+// 7. substring() Method
+const substring =  str.substring(1, 4);
+console.log(substring);
+
+// 8. substr() Method
+const substr =  str.substr(1, 4);
+console.log(substr);
+
+// 9. replace() Method
+const replace = str.replace("Morioh", "Thanawat");
+console.log(str);
+console.log(replace);
+
+// 10. includes() Method
+var includes = str.includes("Hello");
+var includes2 = str.includes("hello");
+console.log(includes);
+console.log(includes2);
+
+// 11. concat() Method
+var str1 = "Hello ";
+var str2 = "morioh!";
+var concat = str1.concat(str2);
+console.log(concat);
+
+// 12. charAt() Method
+var charAt = str.charAt(0);
+console.log(charAt);
+
+// 13. charCodeAt() Method
+var charCodeAt = str.charCodeAt(0); 
+console.log(charCodeAt);
+
+// 14. lastIndexOf () Method
+var lastIndexOf = str.lastIndexOf("l");
+console.log(lastIndexOf);
+
+// 15. trim() Method
+var strtrim = "        javascript trim() method removes whitespace        ";
+const trim = strtrim.trim();
+console.log(trim)
+
+// 16. match() Method
+var match = "lopersum lopersum lopersum lopersum."; 
+ var resMatch = match.match(/sum/g);
+console.log(resMatch);
+
+// 17. split Method
+const strSplit = "1,2,3,4,5";
+const arrSplit = strSplit.split(",");
+console.log(arrSplit);
+
+// 18. toString() Method
+const num = 10002;
+const tostring = num.toString();
+console.log(typeof num);
+console.log(typeof tostring);
+console.log(tostring);
+
+
+/***  END  JavaScript Method *** */
+
+
 //  ต่อ 28.00
-
-
 //---------------------------
 
 let person = {
